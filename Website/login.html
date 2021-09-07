@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        <script>
+            function onClick()
+            {
+                var user = document.getElementsByName("username")[0].value;
+                var pass = document.getElementsByName("password")[0].value;
+                console.log(user);
+                console.log(pass);
+                if(user == "abcd")
+                {
+                    window.location = "index.html";
+                }
+            }
+        </script>
+    </head>
+    <body> 
+        <input type="text" name="username"/>
+        <br/>
+        <br/>
+        <input type="password" name="password"/>
+        <br/>
+        <br/>
+        <button onclick="onClick()">Login</button>
+    </body>
+</html>
